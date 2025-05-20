@@ -10,7 +10,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="min-h-screen bg-[#fefdf9] flex flex-col items-center justify-center px-4 py-10 text-[#1d1f1d]">
+    <div className="pt-30 min-h-screen bg-[#fefdf9] flex flex-col items-center justify-center px-4 py-10 text-[#1d1f1d]">
       <div className="max-w-6xl w-full grid md:grid-cols-2 gap-10 items-center">
 
         {/* Côté gauche */}

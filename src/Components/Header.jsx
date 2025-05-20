@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import aeeeciLogo from "../asset/logo_AEEECI.jpg";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -24,7 +25,7 @@ export default function Header() {
           {/* Logo arrondi */}
           <div className="w-12 h-12 rounded-full overflow-hidden border border-amber-500 shadow-sm animate-pulse-soft animate-float">
             <img
-              src="src/asset/logo_AEEECI.jpg"
+              src={aeeeciLogo}
               alt="Logo de l'aeeeci"
               className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
             />
