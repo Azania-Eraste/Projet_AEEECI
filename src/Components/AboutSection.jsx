@@ -3,7 +3,7 @@ import aeeeciLogo from "../asset/logo_AEEECI.jpg"; // Assure-toi que le logo est
 
 export default function AboutSection() {
   return (
-    <section className="w-full bg-white py-35 px-4 md:px-20" id="about">
+    <section className="w-full bg-[#fefdf9] py-35 px-4 md:px-20" id="about">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 items-center">
 
         {/* Logo avec animation */}
