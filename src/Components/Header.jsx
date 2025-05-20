@@ -31,7 +31,7 @@ export default function Header() {
               className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
             />
           </div>
-          <h1 className={`text-xl font-semibold ${scrolled ? "text-white" : "text-yellow-500"}`}>
+          <h1 className={`text-xl font-semibold transition-all duration-300 ${scrolled ? "text-white" : "text-yellow-500"}`}>
             AEEECI
           </h1>
         </a>
@@ -42,8 +42,14 @@ export default function Header() {
           <a href="/" className="text-yellow-500 hover:text-yellow-700 py-2 px-4">
             Accueil
           </a>
-          <a href="/evenements" className="text-yellow-500 hover:text-yellow-700 py-2 px-4">
+          <a href="/Equipe" className="text-yellow-500 hover:text-yellow-700 py-2 px-4">
+            Equipe
+          </a>
+          <a href="/Evenements" className="text-yellow-500 hover:text-yellow-700 py-2 px-4">
             Évènements
+          </a>
+          <a href="/Evenements" className="text-yellow-500 hover:text-yellow-700 py-2 px-4">
+            Actualités
           </a>
           <a href="/Contact" className="text-yellow-500 hover:text-yellow-700 py-2 px-4">
             Contact
