@@ -46,7 +46,9 @@ export default function Header() {
         {/* Bouton à droite */}
         <div className="flex-1 flex justify-end ">
           <button className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition">
+            <a href="/Se Connecter">
             Connexion
+            </a>
           </button>
         </div>
       </div>

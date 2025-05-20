@@ -3,7 +3,7 @@ import EventCard from "./EventCard";
 
 const allEvents = [
   { id: 1, title: "AG", date: "2025-06-20", description: "Assemblée générale", image: "/events/ag.jpg", type: "Rencontre" },
-  { id: 2, title: "Hackathon", date: "2025-07-05", description: "Hackathon", image: "/events/hackathon.jpg", type: "Compétition" },
+  { id: 2, title: "Jamborée", date: "2025-07-05", description: "Jamborée Nationale", image: "/events/hackathon.jpg", type: "Compétition" },
   { id: 3, title: "Camp", date: "2025-08-15", description: "Camp de formation", image: "/events/camp.jpg", type: "Formation" },
 ];
 
@@ -22,7 +22,7 @@ export default function Event() {
           <button
             key={type}
             className={`px-4 py-2 rounded-full border ${
-              filter === type ? "bg-blue-600 text-white" : "bg-white text-gray-800"
+              filter === type ? "bg-green-900 text-yellow-500" : "bg-white text-gray-800"
             }`}
             onClick={() => setFilter(type)}
           >
