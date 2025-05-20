@@ -2,6 +2,8 @@ import { motion } from 'framer-motion';
 import PresentationCard from '../Components/PresentationCard.jsx';
 import Header from '../Components/Header.jsx';
 import Footer from '../Components/Footer.jsx';
+import CN from '../asset/CN.jpg';
+import CNA from '..//asset/CNA.jpg';
 
 
 export default function Equipe() {
@@ -11,7 +13,7 @@ export default function Equipe() {
     role: "Commissaire National",
     description:
       "Le Caire Amoikon nouveau commissaire national de l'AEEECI pour le mandat 2025-2027",
-    image: "src/asset/CN.jpg",
+    image: CN,
   };
 
   const deputyCommissioners = [
@@ -20,28 +22,28 @@ export default function Equipe() {
       name: "Aminata Kouassi",
       role: "Commissaire National Adjoint",
       description: "Responsable des programmes de formation et de la coordination régionale.",
-      image: "src/asset/CNA.jpg",
+      image: CNA,
     },
     {
       id: 2,
       name: "Jean Dupont",
       role: "Commissaire National Adjoint",
       description: "En charge des partenariats et des relations internationales.",
-      image: "src/asset/CNA.jpg",
+      image: CNA,
     },
     {
       id: 3,
       name: "Fatima Koné",
       role: "Commissaire National Adjoint",
       description: "Supervise les activités jeunesse et les programmes éducatifs.",
-      image: "src/asset/CNA.jpg",
+      image: CNA,
     },
     {
       id: 4,
       name: "Moussa Traoré",
       role: "Commissaire National Adjoint",
       description: "Gère les finances et la logistique des événements nationaux.",
-      image: "src/asset/CNA.jpg",
+      image: CNA,
     },
   ];
 
