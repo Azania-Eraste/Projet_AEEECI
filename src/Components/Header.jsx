@@ -48,7 +48,7 @@ export default function Header() {
           <a href="/Evenements" className="text-yellow-500 hover:text-yellow-700 py-2 px-4">
             Évènements
           </a>
-          <a href="/Evenements" className="text-yellow-500 hover:text-yellow-700 py-2 px-4">
+          <a href="/Actualites" className="text-yellow-500 hover:text-yellow-700 py-2 px-4">
             Actualités
           </a>
           <a href="/Contact" className="text-yellow-500 hover:text-yellow-700 py-2 px-4">

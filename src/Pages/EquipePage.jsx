@@ -54,6 +54,12 @@ export default function Equipe() {
       role: "Commissaire National Assistant",
       description: "Coordination des activités locales.",
     },
+        {
+      id: 3,
+      name: "Éric Kouadio",
+      role: "Commissaire National Assistant",
+      description: "Coordination des activités locales.",
+    },
     // Add more assistants as needed
   ];
 
@@ -147,7 +153,7 @@ export default function Equipe() {
       {/* Section 3: Commissaires Nationaux Assistants */}
       <motion.section className="mb-16" variants={sectionVariants}>
         <h2 className="text-3xl font-bold text-gray-800 text-center mb-8">Commissaires Nationaux Assistants</h2>
-        <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-6">
           {assistantCommissioners.map((assistant) => (
             <PresentationCard
               key={assistant.id}
@@ -160,7 +166,7 @@ export default function Equipe() {
       </motion.section>
       <motion.section variants={sectionVariants}>
         <h2 className="text-3xl font-bold text-gray-800 text-center mb-8">Commissaires de Division</h2>
-        <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-6">
           {divisionCommissioners.map((division) => (
             <PresentationCard
               key={division.id}

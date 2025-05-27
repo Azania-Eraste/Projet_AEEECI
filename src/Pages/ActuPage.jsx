@@ -1,12 +1,12 @@
-import Event from "../Components/Event";
+import Actu from "../Components/Actu";
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
 
-export default function EventPage(){
+export default function ActuPage(){
     return (
         <>
         <Header />
-        <Event />
+        <Actu />
         <Footer />
         </>
     );
