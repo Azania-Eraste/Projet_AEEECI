@@ -19,32 +19,26 @@ export default function Equipe() {
   const deputyCommissioners = [
     {
       id: 1,
-      name: "Aminata Kouassi",
+      name: "Signaux Emmanuel",
       role: "Commissaire National Adjoint",
-      description: "Responsable des programmes de formation et de la coordination régionale.",
+      description: "Responsable des programmes de formation, des ressources adultes et des programmes éducatifs",
       image: CNA,
     },
     {
       id: 2,
-      name: "Jean Dupont",
+      name: "Silue Desire",
       role: "Commissaire National Adjoint",
-      description: "En charge des partenariats et des relations internationales.",
+      description: "En charge du sécrétariat et de l'administration teritoriale",
       image: CNA,
     },
     {
       id: 3,
-      name: "Fatima Koné",
+      name: "Django Didier",
       role: "Commissaire National Adjoint",
-      description: "Supervise les activités jeunesse et les programmes éducatifs.",
+      description: "En charge de la trésorerie nationale et des activités financières",
       image: CNA,
     },
-    {
-      id: 4,
-      name: "Moussa Traoré",
-      role: "Commissaire National Adjoint",
-      description: "Gère les finances et la logistique des événements nationaux.",
-      image: CNA,
-    },
+
   ];
 
   const assistantCommissioners = [
@@ -63,6 +57,34 @@ export default function Equipe() {
     // Add more assistants as needed
   ];
 
+  const divisionCommissioners = [
+    {
+      id: 1,
+      name: "Amian Grâce",
+      role: "Commissaire de Division",
+      division: "Aboisso",
+    },
+    {
+      id: 2,
+      name: "N'da George",
+      role: "Commissaire de Division",
+      division: "Abidjan 1",
+    },
+    {
+      id: 3,
+      name: "Silue Desiré",
+      role: "Commissaire de Division",
+      division: "Abidjan 4",
+    },
+        {
+      id: 4,
+      name: "Achadé Marius",
+      role: "Commissaire de Division",
+      division: "Abidjan 5",
+    },
+
+  ];
+
   // Animation variants for sections
   const sectionVariants = {
     hidden: { opacity: 0 },
@@ -73,7 +95,7 @@ export default function Equipe() {
     <>
     <Header />
     <motion.div
-      className=" pt-25 min-h-screen bg-gray-100 py-12 px-4 sm:px-6 lg:px-8"
+      className=" pt-25 min-h-screen bg-[#fefdf9] py-12 px-4 sm:px-6 lg:px-8"
       initial="hidden"
       animate="visible"
       variants={sectionVariants}
@@ -109,7 +131,7 @@ export default function Equipe() {
       {/* Section 2: Commissaires Nationaux Adjoints */}
       <motion.section className="mb-16" variants={sectionVariants}>
         <h2 className="text-3xl font-bold text-gray-800 text-center mb-8">Commissaires Nationaux Adjoints</h2>
-        <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {deputyCommissioners.map((deputy) => (
             <PresentationCard
               key={deputy.id}
@@ -123,7 +145,7 @@ export default function Equipe() {
       </motion.section>
 
       {/* Section 3: Commissaires Nationaux Assistants */}
-      <motion.section variants={sectionVariants}>
+      <motion.section className="mb-16" variants={sectionVariants}>
         <h2 className="text-3xl font-bold text-gray-800 text-center mb-8">Commissaires Nationaux Assistants</h2>
         <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-6">
           {assistantCommissioners.map((assistant) => (
@@ -132,6 +154,19 @@ export default function Equipe() {
               title={assistant.name}
               subtitle={assistant.role}
               description={assistant.description}
+            />
+          ))}
+        </div>
+      </motion.section>
+      <motion.section variants={sectionVariants}>
+        <h2 className="text-3xl font-bold text-gray-800 text-center mb-8">Commissaires de Division</h2>
+        <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-6">
+          {divisionCommissioners.map((division) => (
+            <PresentationCard
+              key={division.id}
+              title={division.name}
+              subtitle={division.role}
+              description={division.division}
             />
           ))}
         </div>
