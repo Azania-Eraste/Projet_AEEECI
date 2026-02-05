@@ -27,10 +27,11 @@ export default function AboutSection() {
         >
           <h2 className="text-3xl font-bold text-gray-800">À propos de l’AEEECI</h2>
           <p className="text-gray-600 leading-relaxed">
-            L’Association des Élèves et Étudiants de l’Est de la Côte d’Ivoire (AEEECI)
-            est une organisation qui a pour but de promouvoir l’excellence académique,
-            la solidarité, la culture et le développement personnel des jeunes issus de
-            l’Est du pays.
+            L’Association des Éclaireures et Éclaireurs Evangéliques de la Côte d’Ivoire (AEEECI)
+            est une organisation de jeunesse chrétienne dédiée à l’épanouissement personnel,
+            spirituel et social des jeunes en Côte d’Ivoire. Fondée sur les principes du scoutisme
+            évangélique, l’AEEECI vise à former des leaders engagés, responsables et solidaires,
+            prêts à contribuer positivement à la société.
           </p>
           <p className="text-gray-600 leading-relaxed">
             À travers des conférences, des forums, des activités sociales et des projets
